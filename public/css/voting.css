@@ -1,0 +1,129 @@
+body{
+    background-color: white;
+}
+#headerContainer {
+    background-color: #c8fab3;
+    margin: 0;
+    padding: 10px;
+}
+
+#header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 40px;
+}
+
+#header span {
+    color: #d49a42;
+    font-size: 40px;
+}
+
+#header img {
+    width: 70px;
+}
+
+#title{
+    text-align: center;
+}
+
+#votingContainer{
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+form h2 {
+    text-align: center;
+}
+
+#candidatesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#candidatesCard {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+#candidatesCard img {
+    border: solid 10px #c8fab3;
+    width: 100%;
+    min-width: 200px;
+}
+
+#radioLabel {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: #3e3726;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+
+#radioLabel:hover{
+    background-color: #c8fab3;
+    margin: 0;
+    padding: 15px 15px;
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+}
+
+#radioLabel:active{
+    background-color: #ccc;
+}
+
+
+
+
+
+
+#btnVote {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+
+
+@media (max-width: 768px) {
+    #header span{
+        font-size: 15px;
+    }
+    #header img{
+        width: 40px;
+    }
+    
+    #candidatesCard{
+        width: 30%;
+    }
+
+    #candidatesCard img {
+        min-width: 0;
+    }
+
+    #radioLabel{
+        width: 100%;
+    }
+}
