@@ -10,29 +10,6 @@ body {
     flex-direction: column;
 }
 
-#headerContainer {
-    background-color: #c8fab3;
-    margin: 0;
-    padding: 10px;
-}
-
-#header {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    border-radius: 40px;
-}
-
-#header span {
-    color: #d49a42;
-    font-size: 40px;
-}
-
-#header img {
-    width: 70px;
-}
-
 #actionsContainer {
     flex: 1;
     display: flex;
@@ -56,12 +33,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    #header span{
-        font-size: 15px;
-    }
-    #header img{
-        width: 40px;
-    }
     #actionsContainer{
         flex-direction: column;
     }

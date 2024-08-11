@@ -1,27 +1,8 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: white;
-}
-#headerContainer {
-    background-color: #c8fab3;
-    margin: 0;
-    padding: 10px;
-}
-
-#header {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    border-radius: 40px;
-}
-
-#header span {
-    color: #d49a42;
-    font-size: 40px;
-}
-
-#header img {
-    width: 70px;
 }
 
 #title{
@@ -58,13 +39,18 @@ form h2 {
     margin: 0 10px;
     margin-bottom: 20px;
     align-items: center;
+    width: 30%; 
+    min-width: 200px;
 }
 
 #candidatesCard img {
     border: solid 10px #c8fab3;
-    width: 100%;
-    min-width: 200px;
+    aspect-ratio: 1 / 1; 
+    width: 100%; 
+    min-width: 150px;
+    object-fit: cover; 
 }
+
 
 #radioLabel {
     display: flex;
@@ -79,6 +65,9 @@ form h2 {
     padding: 10px 0;
 }
 
+#btnRadio{
+    height: 12px;
+}
 
 #radioLabel:hover{
     background-color: #c8fab3;
@@ -108,22 +97,21 @@ form h2 {
 
 
 @media (max-width: 768px) {
-    #header span{
-        font-size: 15px;
+    form{
+        width: 90%;
     }
-    #header img{
-        width: 40px;
-    }
-    
     #candidatesCard{
-        width: 30%;
+        min-width: 50px;
     }
-
-    #candidatesCard img {
-        min-width: 0;
+    #candidatesCard img{
+        min-width: 100px;
+        border-width: 5px;
     }
-
+    #candidatesContainer span{
+        font-size: 12px;
+    }
     #radioLabel{
         width: 100%;
+        font-size: 12px;
     }
 }

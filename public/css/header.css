@@ -1,0 +1,35 @@
+
+#headerContainer {
+    background-color: #c8fab3;
+    margin: 0;
+    padding: 5px;
+    border-width: 15px 0;
+    border-color: #9fcf8b;
+    border-style: solid;
+}
+
+#header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 40px;
+}
+
+#header span {
+    color: #d49a42;
+    font-size: 30px;
+}
+
+#header img {
+    width: 40px;
+}
+
+@media (max-width: 768px) {
+    #header span{
+        font-size: 15px;
+    }
+    #header img{
+        width: 40px;
+    }
+}

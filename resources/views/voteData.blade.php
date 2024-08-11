@@ -3,6 +3,7 @@
 <head>
     <title>Vote Data</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/voting.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -28,7 +29,7 @@
                         <div id="candidatesCard">
                             <img src="{{ asset('storage/' . $candidate->image) }}" alt="Image">
                             <span>{{ $candidate->user->first_name }}, {{ $candidate->user->last_name }}</span>
-                            <span>Vote Count: {{ $candidate->votes }}</span>
+                            <span>Vote Count: <b>{{ $candidate->votes }}</b></span>
                         </div>
                     @endforeach
                 </div>
